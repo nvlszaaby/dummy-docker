@@ -1,6 +1,6 @@
 FROM node:18
 WORKDIR /app
-COPY package.json ./
+COPY package.json ./ ./backend/
 RUN npm install
 COPY . .
 CMD ["node", "server.js"]
